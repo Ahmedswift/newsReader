@@ -26,7 +26,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        
+        // update cell height to support iOS 8
+        tabelView.rowHeight = UITableViewAutomaticDimension
+        tabelView.estimatedRowHeight = tabelView.rowHeight
+        
         fetchArticals()
         
         if #available(iOS 10.0, *) {
@@ -153,6 +158,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         let cell = tabelView.dequeueReusableCell(withIdentifier: "articalCell", for: indexPath) as! ArticalCell
+        
+        
         
         cell.articaltype.text = self.newTags?[indexPath.item].label
         cell.title.text = self.articales?[indexPath.item].title

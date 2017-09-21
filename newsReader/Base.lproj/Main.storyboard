@@ -147,7 +147,7 @@
                     </view>
                     <connections>
                         <outlet property="navBarlabel" destination="pL0-mu-ybp" id="nAh-w8-CBj"/>
-                        <outlet property="tabelView" destination="JKE-et-Zi7" id="ZKM-2i-wCF"/>
+                        <outlet property="tabelView" destination="JKE-et-Zi7" id="dYW-IQ-g2e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
